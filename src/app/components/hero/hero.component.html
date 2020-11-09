@@ -1,0 +1,21 @@
+<div class="row">
+    <h2 class="col-10">{{hero.nombre}}<small>{{hero.aparicion}}</small></h2>
+    <div class="col-2">
+        <button [routerLink]="['/heros']" class="btn btn-outline-warning btn-block">Regresar</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    
+    <div class="col-4">
+        <img src="{{hero.img}}" alt="">
+    </div>
+    <div class="col-8">
+        <h3>Casa:
+            <img *ngIf="!flag" class="img-logo" src="../../../assets/img/marvel.jpeg" alt="">
+            <img *ngIf="!flag" class="img-logo" src="../../../assets/img/dc.jpeg" alt="" >
+        </h3>
+        <hr>
+        <p>{{hero.bio}}</p>
+    </div>
+</div>

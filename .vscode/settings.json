@@ -1,0 +1,5 @@
+{
+    "html.format.endWithNewline": true,
+    "java.codeGeneration.generateComments": true,
+    "remote.WSL.debug": true
+}

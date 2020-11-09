@@ -1,0 +1,13 @@
+<div class="card fadeIn fadeIn fast" [ngClass]="{'border-primary': PadreHero.casa == 'DC', 'border-danger': PadreHero.casa == 'Marvel'}">
+    <img src="{{PadreHero.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{ PadreHero.nombre | uppercase }}</h5>
+        <p class="card-text">{{PadreHero.bio | slice:0:101}}</p>
+        <p class="card-text">Casa: {{PadreHero.casa}}</p>
+        <small>Aparicion: {{PadreHero.aparicion | date: 'longDate'}}</small>
+    </div>
+    <!-- En este router Link añadimos un segundo parámetro a la ruta, en este caso el index -->
+    <!-- (click)= "Navegar(i)" -->
+    <!-- [routerLink]= "['/hero', i]" -->
+    <button  (click)="Navegar()" class="btn btn-outline-success btn-block">Ver mas...</button>
+</div>
